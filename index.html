@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./assets/css/custom.css" rel="stylesheet">
+    <title>Bootstrap demo</title>
+</head>
+<body>
+   
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <p class="h1">Boostrap example</p>
+            </div>
+            <div class="col-6">
+                <p class="h3">Esercitiazione per jquery: validatione lato client</p>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-12">
+                <form action="./server/php/response.php" method="get">
+                <div class="col-12">
+                    <div class="mb-3">
+                    <label for="exampleInputName1" class="form-label">Nome</label>
+                    <input type="text" name="exampleInputName1" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                    <span id="checkSpanName"></span>
+                </div>
+            </div>
+            <div class="col-12">
+                <form action="./server/php/response.php" method="get">
+                <div class="mb-3">
+                    <label for="exampleInputCognome1" class="form-label">Cognome</label>
+                    <input type="text" name="exampleInputCognome1" class="form-control" id="exampleInputCognome1" aria-describedby="nameHelp">
+                    <span id="checkSpanSurname"></span>
+                </div>
+            </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" name="exampleInputEmail1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <span id="checkSpan"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" name="exampleInputPassword1" class="form-control" id="exampleInputPassword1">
+                    
+                    <button type="button" class="btn btn-primary" id="showPwd">Show</button>
+                    <span id="clearPassword"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputRipetiPassword1" class="form-label">Ripeti Password</label>
+                    <input type="password" name="x" class="form-control" id="exampleInputRipetiPassword1">
+
+                    <button type="button" class="btn btn-primary" id="showPwd2">Show</button>
+                    <span id="clearPassword2"></span>
+                </div>
+                <div class="mb-3">
+                    <span id="checkSpanPass"></span>
+                </div>
+                <button type="button" class="btn btn-primary" id="check">Verifica tutti i campi</button>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary" id="submitFinal" disabled >Submit</button>
+                </form>
+            </div>    
+        </div>    
+    
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/myjs.js"></script>
+</body>
+</html>
